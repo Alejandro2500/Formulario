@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulario</title>
+</head>
+<body>
+
+    <h1>Banco de sangre</h1>
+
+    <h2>Donación de sangre para un paciente</h2>
+
+    <form action="index.html" method="post">
+        <ul>
+
+            <div class="a">
+            <h3>Seleccionar hora de inscripción</h3>
+            <li>
+                <label for="fechainsc"></label>
+                <input type="datetime-local" name=" fechainsc_usuario" id="fechainsc" required="">
+            </li>
+            </div>
+
+            <div class="b">
+            <h3>Agregue sus detalles</h3>
+            <li>
+                <label for="nombre"></label>
+                <input type="text" name="nombre_usuario" id="nombre" 
+                required="" placeholder="Nombre*">
+            </li>
+            <li>
+                <label for="correo"></label>
+                <input type="email" name="correo_usuario" id="correo" 
+                required="" placeholder="Correo electrónico*">
+            </li>
+            </div>
+
+            <div class="c">
+            <h3>Proporcionar información adicional</h3>
+            <li>
+                <label for="DUI"> Número de DUI del donante: </label>
+                <input type="number" name="DUI_donante" id="DUI" required="">
+            </li>
+            <li>
+                <label for="genero"> Sexo del donante </label>
+                <select name="genero_donante" id="genero" required="">
+                    <option value="nada"> --seleccione una opción--</option>
+                     <option value="Masculino"> Masculino </option>
+                    <option value="Femenino"> Femenino </option>
+                </select>
+            </li>
+            <li>
+                <label for="ocup"> Ocupación del donante (opcional) </label>
+                <input type="text" name="ocup_donante" id="ocup">
+            </li>
+            <li>
+                <label for="tel"> Teléfono de contacto del donante: </label>
+                <input type="tel" name="tel_donante" id="tel" required="">
+            </li>
+            <li>
+                <label for="nombreP"> Nombre completo del paciente: </label>
+                <input type="text" name="nombre_paciente" id="nombreP" required="">
+            </li>
+            <li>
+                <label for="numeroP"> Número de Afiliación o DUI del paciente: </label>
+                <input type="number" name="numero_paciente" id="numeroP" required="">
+            </li>
+            <li>
+                <button type="submit" class="button"> Enviar datos </button>
+            </li>
+            </div>
+
+        </ul>
+    </form>
+</body>
+</html>
